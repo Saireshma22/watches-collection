@@ -1,0 +1,233 @@
+/* General */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+  background: rgba(0,0,0,0.7);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+header h1 { margin: 0; }
+
+.icons span {
+  margin-left: 15px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Home Page Background */
+.home-bg {
+  background: url("https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.center {
+  text-align: center;
+  background: rgba(255,255,255,0.85);
+  padding: 40px;
+  border-radius: 15px;
+}
+
+.center button {
+  margin: 15px;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  background: #222;
+  color: white;
+  cursor: pointer;
+}
+
+.center button:hover {
+  background: #444;
+}
+
+/* Login & Signup Page */
+.auth-bg {
+  background: url("https://images.unsplash.com/photo-1523275335684-37898b6baf30") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-container {
+  background: rgba(255,255,255,0.9);
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  width: 300px;
+}
+
+.auth-container input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.auth-container button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #222;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.auth-container button:hover {
+  background: #444;
+}
+/* Product Grid */
+/* Product Grid */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: transparent;   /* removes blue background */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #444;
+ /* keep text visible over background image */
+}
+
+
+
+
+.gents-bg {
+  background: url("https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg") no-repeat center center/cover;
+  min-height: 100vh;
+}
+.ladies-bg {
+  background: url("https://images.unsplash.com/photo-1523275335684-37898b6baf30") no-repeat center center/cover;
+  min-height: 100vh;
+}
+.icons span {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+.cart-page{
+   background: url("https://images.unsplash.com/photo-1523275335684-37898b6baf30") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart-page div {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+
+.product-card input {
+  width: 50px;
+  text-align: center;
+  margin: 5px;
+}
+
+.product-card button {
+  margin: 5px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.product-card button.add {
+  background: #28a745;
+  color: white;
+}
+
+.product-card button.fav {
+  background: #e63946;
+  color: white;
+}
+/* Toast Notification */
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.3s, transform 0.3s;
+  z-index: 9999;
+}
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.cart-summary {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.cart-summary p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.cart-summary button {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background: #28a745;
+  color: white;
+  cursor: pointer;
+}
+
+.cart-summary button:hover {
+  background: #218838;
+}

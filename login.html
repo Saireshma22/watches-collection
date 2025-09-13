@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Luxurious Watches</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-bg">
+  <div class="auth-container">
+    <h2>Login</h2>
+    <input type="text" id="login-username" placeholder="Enter Username">
+    <input type="password" id="login-password" placeholder="Enter Password">
+    <button onclick="login()">Login</button>
+    <p>New user? <a href="signup.html">Sign Up</a></p>
+  </div>
+  <script>
+    function login() {
+      let user = document.getElementById("login-username").value;
+      let pass = document.getElementById("login-password").value;
+      if (user === localStorage.getItem("username") && pass === localStorage.getItem("password")) {
+        alert("Login Successful!");
+        window.location.href = "index.html";
+      } else {
+        alert("Invalid credentials!");
+      }
+    }
+  </script>
+</body>
+</html>

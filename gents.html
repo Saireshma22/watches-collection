@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gents Watches</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body class="gents-bg">
+  
+  <header>
+    <h1>Gents Branded Watches</h1>
+    <div class="cart-icon">
+        <span onclick="location.href='favorites.html'">❤️ <span id="fav-count">0</span></span>
+      <span onclick="location.href='cart.html'">🛒 <span id="cart-count">0</span></span>
+    </div>
+    </div>
+  </header>
+   
+
+  <main id="product-list" class="products"></main>
+
+  <script src="script.js"></script>
+  <script>
+    const gentsWatches = [
+        {id: 101, name: "TAG Heuer Carrera Automatic Chronograph", price: 155000, img: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRjigLrnrA9R4mQpSSLV6k-YJtP5k9bzpSZbxJMKiUtbYmlYRy8wZ3u9srQYCqepqhO5QGdAHMkO8w_7ptJ2cL224SYBRzJriQ2ygMBp2CZCOjKaNTH_7X7KQ"},
+       {id: 100, name: "Omega Seamaster", price: 320000, img: "https://images-cdn.ubuy.co.in/6635361a9e032467dd1fd14a-omega-seamaster-automatic-chronometer.jpg"},
+    {id: 102, name: "Rado HyperChrome", price: 222500, img: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQprZrQ0C01kwjJ9BiJIMo-HT3L3KusoT384Dbr0YKdzNkfjKAcNNl134dPvNm3KYSArI9683kmmL8YNvvZhjJvp87lh448LpuSRR5KgWL-tlbdMVN3_LUDqg"},
+      {id: 111, name: "Daniel Klein Platinum", price: 12000, img: "https://danielklein.in/cdn/shop/products/DK11926-3_1.jpg?v=1671698180&width=1100"},
+       {id:103, name: "Franklord",price: 45599, img:"https://franklord.in/cdn/shop/files/3-a_5f38d832-d460-47aa-8722-8fce81939aa1.jpg?v=1747835099"},
+    {id: 104, name: "Seiko Automatic", price: 17500, img: "https://m.media-amazon.com/images/I/71B0-LGzGXS._SY741_.jpg"},
+      {id:108, name:"Ulysse Nardin Automatic Wrist Watch", price: 2900000, img: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSfAiDaiRnrgxmAIDRYoXLuhi_D_0WwgYhLUVgX9A5luPOizu9IftI6pwM5sb4TvSdNsqtcLAZF58QCDD8q4r4XKg2-a1zYaTBJu-bwedSw8H0DqqMqs7ji"},
+    {id: 105, name: "Titan Edge Ceramic", price: 26550, img: "https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Sites-titan-master-catalog/default/dwaf457351/images/Titan/Catalog/10011NM01_4.jpg?sw=600&sh=600"},
+      {id: 106, name: "Tommy Hilfiger Skeleton Dial Automatic", price: 22000, img: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSiRTLW9Q61GGokAZkdjryT2jD5k5NcEJL8VhFIJYJBjtAdp5ASPmTDjGnULvfiepoyyfXoEDPb4cajjYamJkadb4giC6coezLxlquPY3-QNGcex-wvYtz3I-0"},
+      {id: 104, name: "Casio Edifice", price: 12499, img: "https://www.casio.com/content/dam/casio/product-info/locales/in/en/timepiece/product/watch/E/EF/EFR/efr-539sg-1av/assets/EFR-539SG-1AVU_theme.jpg.transform/main-visual-pc/image.jpg"},
+    
+     
+      
+      
+    ];
+    loadProducts(gentsWatches);
+  </script>
+</body>
+</html>

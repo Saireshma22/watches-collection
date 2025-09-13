@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ladies Watches</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body class="ladies-bg"></body>
+  <header>
+    <h1>Ladies Watches</h1>
+    <div class="icons">
+      <span onclick="location.href='favorites.html'">❤️ <span id="fav-count">0</span></span>
+      <span onclick="location.href='cart.html'">🛒 <span id="cart-count">0</span></span>
+    </div>
+  </header>
+
+  <main id="product-list" class="products"></main>
+
+  <script src="script.js"></script>
+  <script>
+    const ladies = [
+      {id: 1, name: "Michael Kors Rose Gold", price: 24995, img: "https://michaelkors.scene7.com/is/image/MichaelKors/MK7324-0622_1?$large$"},
+      {id: 2, name: "Titan Raga Gold", price: 18999, img: "https://m.media-amazon.com/images/I/71hDR7sDkCL._SX522_.jpg"},
+      {id: 4, name: "Daniel Klein Premium", price: 8999, img: "https://danielklein.in/cdn/shop/files/DK11914-5_dea6eb8c-c609-4ba9-a40a-f2030f4ae6c6.jpg?v=1745997259&width=1100"},
+      {id: 5, name: "Guess Chelsea Rose", price: 12999, img: "https://watchfactory.in/cdn/shop/products/1_163c4df7-8eee-475c-8bdb-ed45dcff54d6.png?v=1711789282&width=1800"},
+      {id: 6, name: "Casio Sheen", price: 9999, img: "https://www.kamalwatch.com/cdn/shop/products/SH260.webp?v=1685423760&width=823"},
+      {id: 7, name: "Anne Klein White Dial", price: 10999, img: "https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Sites-titan-master-catalog/default/dwb404fcce/images/Helios/Catalog/AK5064RGBH_1.jpg?sw=600&sh=600"},
+      {id: 8, name: "Emporio Armani Ladies", price: 21999, img: "https://www.kamalwatch.com/cdn/shop/files/ar11576_1_1.jpg?v=1702288490"},
+      {id: 9, name: "Tommy Hilfiger Pink Dial", price: 12499, img: "https://tgtluxe.com/wp-content/uploads/2024/08/TH1782493.jpg"},
+      {id: 10, name: "Citizen Eco-Drive", price: 54999, img: "https://justintime.in/cdn/shop/files/EM1090-78XFront.jpg?v=1748333993&width=990"},
+      
+      {id: 11, name: "Versus Versace", price: 22999, img: "https://cdn.webshopapp.com/shops/302901/files/431293634/image.jpg"}
+    ];
+    loadProducts(ladies);
+  </script>
+</body>
+</html>

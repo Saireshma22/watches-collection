@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🛒 Your Cart</h1>
+     <div class="icons">
+      <span onclick="location.href='favorites.html'">❤️ <span id="fav-count">0</span></span>
+      <span onclick="location.href='cart.html'">🛒 <span id="cart-count">0</span></span>
+    </div>
+  </header>
+
+  <main id="cart-items" class="cart-page"></main>
+
+  <!-- ✅ Wrap total & button in a container -->
+  <div class="cart-summary">
+    <p id="total">Total: ₹0</p>
+    <button onclick="placeOrder()">Order</button>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    window.onload = () => {
+      renderCart();
+    };
+  </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - Luxurious Watches</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-bg">
+  <div class="auth-container">
+    <h2>Create Account</h2>
+    <input type="text" id="signup-username" placeholder="Enter Username">
+    <input type="password" id="signup-password" placeholder="Enter Password">
+    <button onclick="signup()">Sign Up</button>
+    <p>Already have an account? <a href="login.html">Login</a></p>
+  </div>
+  <script>
+    function signup() {
+      let user = document.getElementById("signup-username").value;
+      let pass = document.getElementById("signup-password").value;
+      if (user && pass) {
+        localStorage.setItem("username", user);
+        localStorage.setItem("password", pass);
+        alert("Signup successful! Please login.");
+        window.location.href = "login.html";
+      } else {
+        alert("Please enter all fields");
+      }
+    }
+  </script>
+</body>
+</html>
